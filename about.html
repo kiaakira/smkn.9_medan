@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2.2.16/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+     
+    <title>Document</title>
+
+    <style>
+      .relative:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Sembunyikan teks "Lihat Foto" saat gambar dihover */
+.relative:hover a {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+    </style>
+</head>
+<body>
+  <nav class="bg-stone-900 p-4">
+    <div class="container mx-auto flex flex-wrap justify-between items-center">
+        <!-- Logo and Site Title -->
+        <div class="flex justify-start items-center">
+            <img src="smk9.jpeg" alt="" class="aspect-square w-14 rounded-full" />
+            <a href="#" class="text-white text-2xl ml-4 font-bold">
+                SMK NEGERI 9 MEDAN
+            </a>
+        </div>
+
+        <!-- Navbar Links -->
+        <div class="flex justify-end items-center lg:hidden md:hidden">
+            <button id="sidebar-toggle" class="text-white ml-2 lg:hidden justify-end">
+              <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <div class="flex items-center"> 
+          <!-- menu -->
+          <ul class="flex space-x-4 mr-3">
+              <li class="hidden sm:hidden md:hidden lg:block">
+                  <a href="sekolah.html" class="text-white">
+                    Home
+                  </a>
+              </li>
+              <li class="hidden sm:hidden md:hidden lg:block">
+                  <a href="sekolah.html #jurusan" class="text-white">
+                    Jurusan
+                  </a>
+              </li>
+              <li class="hidden sm:hidden md:hidden lg:block">
+                  <a href="sekolah.html #fasilitas" class="text-white">
+                    Fasilitas
+                  </a>
+              </li>
+              <li class="hidden sm:hidden md:hidden lg:block">
+                  <a href="sekolah.html #kontak" class="text-white">
+                    Contact us
+                  </a>
+              </li>
+              <li class="hidden sm:hidden md:hidden lg:block">
+                  <a href="about.html #galery" class="text-white">
+                    Galery
+                  </a>
+              </li>
+            </ul>
+        </div>
+
+           <!-- Profile -->
+<div class="flex items-end">
+<img src="kia3.jpg" alt="" class="aspect-square w-16 rounded-full" />
+<div class="ml-4 mb-4">
+    <div class="font-bold text-white  hidden md:block">syakira</div>
+    <!-- Hide the following on small screens -->
+    <div class="-mt-1 text-sky-600 hidden md:block">siswa</div>
+</div>
+</div>
+        </div>
+    </div>
+</nav>
+    </nav>
+    <div id="sidebar" class="fixed bg-stone-700 text-white w-64 py-4 transform -translate-x-full transition-transform duration-300 ease-in-out top-0 left-0 h-full z-50 md:w-1/4 sm:w-1/4">
+      <button id="closeSidebar" class="absolute top-2 right-2 text-white">
+        <i class="fas fa-times"></i>
+      </button>
+      <ul>
+          <li class="py-2">
+              <a href="sekolah.html" class="block px-4">Home</a>
+          </li>
+          <li class="py-2">
+              <a href="sekolah.html #jurusan" class="block px-4">Jurusan</a>
+          </li>
+          <li class="py-2">
+              <a href="sekolah.html #fasilitas" class="block px-4">Fasilitas</a>
+          </li>
+          <li class="py-2">
+              <a href="sekolah.html #kontak" class="block px-4">Contact us</a>
+          </li>
+          <li class="py-2">
+              <a href="#galery" class="block px-4">Galery</a>
+          </li>
+          
+         
+    </div>
+
+<div class="container mx-auto">
+    <div class="p-4 w-full flex justify-center">
+        <h1 class=" text-2xl mt-3 ml-4 font-bold text-black">
+          Jurusan
+        </h1> 
+    </div>
+    <section class="container mx-auto py-12">
+        <div class="grid grid-cols-1">
+            <div class="bg-black rounded-2xl p-5 shadow-xl mb-12 mx-auto w-full md:w-[1000px]" id="rpl">
+              <!-- Kontainer untuk Foto dan Teks -->
+              <div class="flex flex-col md:flex-row items-center md:items-start">
+                <!-- Foto -->
+                <div class="w-full md:w-1/2 md:mr-8 mb-4 rounded-2xl bg-white">
+                  <img src="rpl.jpg" alt="rpl" width="300px" class="mx-auto mt-4">
+                </div>
+          
+                <!-- Teks "Tentang SMK Negeri 9 Medan" -->
+                <div class="w-full md:w-1/2">
+                  <h2 class="text-3xl font-bold mb-4 text-center text-white md:text-left">Rekayasa Perangkat Lunak</h2>
+                  <p class="max-w-md mx-auto md:text-left text-center text-white">Jurusan RPL biasanya menawarkan program pendidikan yang dirancang untuk mempersiapkan siswa dengan pengetahuan dan keterampilan dalam rekayasa perangkat lunak. Ini mencakup pembelajaran tentang pemrograman komputer, siswa di jurusan RPL akan mempelajari bahasa pemrograman seperti Java, C++, Python, atau bahasa pemrograman lainnya. Mereka juga akan belajar tentang algoritma, struktur data, basis data, dan konsep penting dalam pengembangan perangkat lunak.</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-black rounded-2xl p-5 shadow-xl mb-12 mx-auto w-full md:w-[1000px]" id="bcf">
+                <!-- Kontainer untuk Foto dan Teks -->
+                <div class="flex flex-col mb-4 md:flex-row items-center md:items-start">
+                    <!-- Foto -->
+                    <div class=" w-full md:w-1/2 md:mr-8 mb-4 rounded-2xl bg-white">
+                      <img src="bcf.png" alt="bcf" width="300px" class="mx-auto mt-4">
+                    </div>
+                  <!-- Teks "Rekayasa Perangkat Lunak" -->
+                  <div class="w-full mb-4 md:w-1/2">
+                    <h2 class="text-3xl font-bold text-center text-white md:text-left">Broadcasting dan perfilman</h2>
+                    <p class="max-w-md mx-auto md:text-left text-center text-white">Jurusan Broadcasting dan Perfilman adalah program pendidikan yang dirancang untuk mempersiapkan siswa dalam bidang penyiaran (broadcasting) dan perfilman. Program ini membantu siswa mengembangkan keterampilan dan pengetahuan yang dibutuhkan untuk bekerja di industri media dan hiburan.jurusan Broadcasting dan Perfilman di SMK dapat membantu siswa mengejar karier di industri media yang terus berkembang. Penting bagi siswa untuk mengembangkan keterampilan teknis dan kreatif mereka serta memahami aspek etika yang relevan dengan industri ini. </p>
+                  </div>
+
+                </div>
+              </div>
+              <div class="bg-black rounded-2xl p-5 shadow-xl mb-12 mx-auto w-full md:w-[1000px]" id="tkj">
+                <!-- Kontainer untuk Foto dan Teks -->
+                <div class="flex flex-col md:flex-row items-center md:items-start">
+                  <!-- Foto -->
+                  <div class="w-full md:w-1/2 md:mr-8 mb-4 rounded-2xl bg-white">
+                    <img src="tkj.jpg" alt="rpl" width="300px" class="mx-auto mt-4">
+                  </div>
+            
+                  <!-- Teks "Tentang SMK Negeri 9 Medan" -->
+                  <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-4 text-center text-white md:text-left">Teknik Komputer Jaringan</h2>
+                    <p class="max-w-md mx-auto md:text-left text-center text-white">Jurusan Teknik Jaringan Komputer adalah program pendidikan yang dirancang untuk membekali siswa dengan pengetahuan dan keterampilan yang diperlukan untuk merancang, mengelola, dan memelihara jaringan komputer. Program ini membantu siswa memahami aspek teknis dan praktis dalam bidang jaringan komputer.Jurusan Teknik Jaringan Komputer di SMK adalah pilihan yang bagus bagi siswa yang tertarik dalam teknologi dan ingin memasuki dunia jaringan komputer dan keamanan. Dengan pertumbuhan terus menerus dalam teknologi informasi, ada banyak peluang karier yang tersedia untuk para ahli jaringan komputer yang terampil. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-black rounded-2xl p-5 shadow-xl mb-12 mx-auto w-full md:w-[1000px]" id="dkv">
+                <!-- Kontainer untuk Foto dan Teks -->
+                <div class="flex flex-col md:flex-row items-center md:items-start">
+                  <!-- Foto -->
+                  <div class="w-full md:w-1/2 md:mr-8 mb-4 rounded-2xl bg-white">
+                    <img src="dkv.jpg" alt="rpl" width="300px" class="mx-auto mt-4">
+                  </div>
+            
+                  <!-- Teks "Tentang SMK Negeri 9 Medan" -->
+                  <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-4 text-center text-white md:text-left">Desain komunikasi visual</h2>
+                    <p class="max-w-md mx-auto md:text-left text-center text-white">Jurusan Desain Komunikasi Visual membekali siswa dengan keterampilan kreatif dalam menciptakan desain grafis yang efektif. Mereka mempelajari prinsip desain, komposisi visual, dan penggunaan alat desain terkini. Siswa juga mendapatkan pemahaman tentang branding, ilustrasi, dan produksi grafis. Lulusan dari program ini memiliki potensi besar untuk berkarir di industri desain, periklanan, penerbitan, dan media digital. Mereka adalah penggerak kreativitas dalam menyampaikan pesan melalui desain visual yang menarik dan berimpact.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-black rounded-2xl p-5 shadow-xl mb-12 mx-auto w-full md:w-[1000px]" id="ps">
+                <!-- Kontainer untuk Foto dan Teks -->
+                <div class="flex flex-col md:flex-row items-center md:items-start">
+                  <!-- Foto -->
+                  <div class="w-full md:w-1/2 md:mr-8 mb-4 rounded-2xl bg-white">
+                    <img src="ps.jpg" alt="rpl" width="300px" class="mx-auto mt-4">
+                  </div>
+            
+                  <!-- Teks "Tentang SMK Negeri 9 Medan" -->
+                  <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-4 text-center text-white md:text-left">Pekerja sosial</h2>
+                    <p class="max-w-md mx-auto md:text-left text-center text-white">Jurusan Pekerja Sosial mempersiapkan siswa untuk berperan dalam membantu individu dan komunitas yang membutuhkan dukungan sosial. Mereka mempelajari keterampilan dalam mendengarkan aktif, memberikan bimbingan, dan mengembangkan program sosial. Siswa juga mendapatkan pemahaman tentang isu-isu sosial dan kebijakan kesejahteraan. Lulusan dari program ini memiliki kemampuan untuk bekerja di lembaga sosial, pemerintah, atau organisasi non-pemerintah yang berfokus pada pelayanan sosial. Mereka adalah agen perubahan yang berkomitmen untuk meningkatkan kualitas hidup masyarakat.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-black rounded-2xl p-5 shadow-xl mb-12 mx-auto w-full md:w-[1000px]" id="anm">
+                <!-- Kontainer untuk Foto dan Teks -->
+                <div class="flex flex-col md:flex-row items-center md:items-start">
+                  <!-- Foto -->
+                  <div class="w-full md:w-1/2 md:mr-8 mb-4 rounded-2xl bg-white">
+                    <img src="anm.jpg" alt="rpl" width="300px" class="mx-auto mt-4">
+                  </div>
+            
+                  <!-- Teks "Tentang SMK Negeri 9 Medan" -->
+                  <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-4 text-center text-white md:text-left">Animasi</h2>
+                    <p class="max-w-md mx-auto md:text-left text-center text-white">Jurusan Animasi memungkinkan siswa untuk mengembangkan keterampilan dalam menciptakan animasi visual yang mengesankan. Mereka belajar tentang teknik animasi 2D dan 3D, desain karakter, dan konsep visual. Siswa juga mendapatkan pelatihan dalam menggunakan perangkat lunak animasi terkini. Lulusan dari program ini memiliki potensi besar untuk berkarir di industri animasi, film, permainan, dan produksi konten digital. Mereka adalah kreator visual masa depan yang dapat membawa cerita hidup melalui medium animasi.</p>
+                  </div>
+                </div>
+              </div>
+           
+                  
+                </div>
+              </div>   
+          </div>
+        </div>
+      </section>
+      
+      <div class="container mx-auto">
+        <div class="p-4 w-full flex justify-center" id="galery">
+            <h1 class=" text-2xl mt-3 ml-4 mb-4 font-bold text-black">
+              Galery
+            </h1> 
+        </div>
+        <div class="grid grid-cols-1 ml-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4" id="gallery">
+            <!-- Foto 1 -->
+            <div class="relative group">
+              <img src="labrpl.jpg" alt="Foto 1" class="w-96 h-60 rounded-2xl object-cover">
+              <div class="opacity-0 group-hover:opacity-100 absolute rounded-2xl inset-0 flex justify-center items-center transition-opacity duration-300">
+              </div>
+            </div>
+          
+            <!-- Foto 2 -->
+            <div class="relative group">
+              <img src="pict7.jpeg" alt="Foto 2" class="w-96 h-60 rounded-2xl object-cover">
+              <div class="opacity-0 group-hover:opacity-100 absolute rounded-2xl inset-0 flex justify-center items-center transition-opacity duration-300">
+              </div>
+            </div>
+          
+            <!-- Foto 3 -->
+            <div class="relative group">
+              <img src="pict6.jpeg" alt="Foto 3" class="w-96 h-60 rounded-2xl object-cover">
+              <div class="opacity-0 group-hover:opacity-100 absolute rounded-2xl inset-0 flex justify-center items-center transition-opacity duration-300">
+              </div>
+            </div>
+          
+            <!-- Foto 4 -->
+            <div class="relative group">
+              <img src="pict5.jpg" alt="Foto 4" class="w-96 h-60 rounded-2xl object-cover">
+              <div class="opacity-0 group-hover:opacity-100 rounded-2xl absolute inset-0 flex justify-center items-center transition-opacity duration-300">
+              </div>
+            </div>
+          
+            <!-- Foto 5 -->
+            <div class="relative group">
+              <img src="kantor.jpg" alt="Foto 5" class="w-96 h-60 rounded-2xl object-cover">
+              <div class="opacity-0 rounded-2xl group-hover:opacity-100 absolute inset-0 flex justify-center items-center transition-opacity duration-300">
+              </div>
+            </div>
+          
+            <!-- Foto 6 -->
+            <div class="relative group">
+              <img src="pict4.jpg" alt="Foto 6" class="w-96 h-60 rounded-2xl object-cover">
+              <div class="opacity-0 group-hover:opacity-100 absolute rounded-2xl inset-0 flex justify-center items-center transition-opacity duration-300">
+              </div>
+            </div>
+          
+            <!-- Foto 7 -->
+            <div class="relative group">
+              <img src="pict3.jpg" alt="Foto 7" class="w-96 h-60 rounded-2xl object-cover">
+              <div class="opacity-0 group-hover:opacity-100 absolute rounded-2xl inset-0 flex justify-center items-center transition-opacity duration-300">
+              </div>
+            </div>
+          
+            <!-- Foto 8 -->
+            <div class="relative group">
+              <img src="pict2.jpg" alt="Foto 8" class="w-96 h-60 rounded-2xl object-cover">
+              <div class="opacity-0 group-hover:opacity-100 absolute inset-0 rounded-2xl flex justify-center items-center transition-opacity duration-300">
+              </div>
+            </div>
+          
+            <!-- Foto 9 -->
+            <div class="relative group">
+              <img src="pict1.jpg" alt="Foto 9" class="w-96 h-60 rounded-2xl  object-cover">
+              <div class="opacity-0 group-hover:opacity-100 absolute inset-0 rounded-2xl flex justify-center items-center transition-opacity duration-300">
+              </div>
+            </div>
+          </div>
+          <div class="fixed bottom-4 right-4">
+            <button id="scrollToTopButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+              <i class="fas fa-solid fa-arrow-up"></i>
+        </div>
+      </div>
+
+      <footer class="bg-gray-800 py-6 text-gray-300 mt-5">
+        <div class="container mx-auto text-center">
+            <p>&copy;syakira 2023 SMKN 9 MEDAN</p>
+            <p>Email: smkn09medan@gmail.com</p>
+            <p>Nomor: (061) 8454350</p>
+            <p>Alamat: Jl. Patriot No.20 A, Lalang, Kec. Medan Sunggal, Kota Medan, Sumatera Utara 20123</p>
+        </div>
+    </footer>
+
+      <script>
+       document.getElementById('sidebar-toggle').addEventListener('click', function() {
+    var sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('-translate-x-full');
+});
+
+document.getElementById('closeSidebar').addEventListener('click', function() {
+    var sidebar = document.getElementById('sidebar');
+    sidebar.classList.add('-translate-x-full');
+});
+
+        function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    const scrollToTopButton = document.getElementById('scrollToTopButton');
+    if (scrollToTopButton) {
+        scrollToTopButton.addEventListener('click', scrollToTop);
+    }
+          </script>
+</body>
+</html>
